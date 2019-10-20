@@ -1,0 +1,160 @@
+@font-face {
+  font-family: "Museo";
+  src: url(../fonts/MuseoSansRounded-100.otf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body,
+html {
+  min-height: 100%;
+  width: 100%;
+}
+
+.clear::after,
+.clear::before {
+  content: " ";
+  display: table;
+}
+
+.clear::after {
+  clear: both;
+}
+
+/* Main Styles */
+
+body {
+  background: url(../images/background.jpg) no-repeat;
+  background-size: cover;
+  font-family: Museo, sans-serif;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  background: #111a28;
+  width: 100%;
+  max-width: 690px;
+  height: 390px;
+  margin: 110px auto;
+  border-radius: 10px;
+}
+
+.card__logo--image {
+  position: absolute;
+  top: 30px;
+  left: 23px;
+  width: 70px;
+  height: 40px;
+}
+
+.card__shues--shoes {
+  position: absolute;
+  width: 335px;
+  height: 165px;
+  top: 125px;
+  left: 35px;
+}
+
+.card__description {
+  position: absolute;
+  right: 10%;
+  margin-top: 75px;
+  
+
+}
+
+.card__title {
+  font-size: 24px;
+  color: #e1e1e1;
+  max-width: 165px;
+  margin-bottom: 10px;
+}
+
+.card__subtitle {
+  font-size: 14px;
+  color: rgba(225, 255, 255, 54%);
+  margin-bottom: 25px;
+}
+
+
+.rating__stats--rating {
+	color: #9da1a6;
+	cursor: pointer;
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
+.rating__stats--rating.rated {
+	color: #f7bf16;
+}
+
+.card__select {
+  color: #e1e1e1;
+  background: #111a28;
+  font-family: Museo, sans-serif;
+  font-size: 14px;
+  border: 1px solid #9da1a6;
+  padding: 5px 10px;
+  appearance: none;
+  margin-bottom: 40px;
+  cursor: pointer;
+  transition: all .3s;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.card__select:hover {
+  background: #768aaa;
+}
+
+
+.card__button {
+  display: block;
+  color: #e1e1e1;
+  background: #202835;
+  font-family: Museo, sans-serif;
+  font-size: 14px;
+  border: 1px solid #9da1a6;
+  padding: 10px 50px;
+  cursor: pointer;
+}
+
+.card__button:hover {
+  background: #475975;
+}
+
+.card__button:active {
+  background: #768aaa;
+}
+
+.card__color {
+  position: absolute;
+  bottom: 20px;
+  left: 25.3%;
+}
+
+.card__color--img {
+  margin: 0 5px;
+  margin-left: 0;
+  transition: all .2s;
+  cursor: pointer;
+}
+
+.card__color--img:hover {
+  transform: scale(1.2);
+  border-radius: 50%;
+  box-shadow: 0px 0px 3px 1px rgba(255,255,255,5);
+}
